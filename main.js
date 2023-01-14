@@ -178,6 +178,90 @@ module.exports = function (i) {
 
 /***/ }),
 
+/***/ "./src/app/images/contact1.jpg":
+/*!*************************************!*\
+  !*** ./src/app/images/contact1.jpg ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/contact1.jpg");
+
+/***/ }),
+
+/***/ "./src/app/images/contact2.jpg":
+/*!*************************************!*\
+  !*** ./src/app/images/contact2.jpg ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/contact2.jpg");
+
+/***/ }),
+
+/***/ "./src/app/images/contact3.jpg":
+/*!*************************************!*\
+  !*** ./src/app/images/contact3.jpg ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/contact3.jpg");
+
+/***/ }),
+
+/***/ "./src/app/images/kebab1.png":
+/*!***********************************!*\
+  !*** ./src/app/images/kebab1.png ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/kebab1.png");
+
+/***/ }),
+
+/***/ "./src/app/images/kebab2.png":
+/*!***********************************!*\
+  !*** ./src/app/images/kebab2.png ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/kebab2.png");
+
+/***/ }),
+
+/***/ "./src/app/images/kebab3.png":
+/*!***********************************!*\
+  !*** ./src/app/images/kebab3.png ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/kebab3.png");
+
+/***/ }),
+
 /***/ "./src/main.css":
 /*!**********************!*\
   !*** ./src/main.css ***!
@@ -567,7 +651,7 @@ const contactPage = (parent) => {
   chefName.textContent = "Chef: Prabhat Chaudhuri";
   chefContact.innerHTML =
     "Phone Number: 999-1231-232<br> E-mail: dominionschef@kebab.com";
-  chefPhoto.src = _images_contact1_jpg__WEBPACK_IMPORTED_MODULE_1__;
+  chefPhoto.src = _images_contact1_jpg__WEBPACK_IMPORTED_MODULE_1__["default"];
 
   chefDiv.appendChild(chefName);
   chefDiv.appendChild(chefPhoto);
@@ -585,7 +669,7 @@ const contactPage = (parent) => {
   managerName.textContent = "Manager: Sumit Kulkarni";
   managerContact.innerHTML =
     "Phone Number: 999-1231-233<br> E-mail: dominionsmanager@kebab.com";
-  managerPhoto.src = _images_contact3_jpg__WEBPACK_IMPORTED_MODULE_3__;
+  managerPhoto.src = _images_contact3_jpg__WEBPACK_IMPORTED_MODULE_3__["default"];
 
   managerDiv.appendChild(managerName);
   managerDiv.appendChild(managerPhoto);
@@ -603,7 +687,7 @@ const contactPage = (parent) => {
   deliveryGuyName.textContent = "Delivery driver: Devadas Divan";
   deliveryGuyContact.innerHTML =
     "Phone Number: 999-1231-234<br> E-mail: dominionsdeliveryguy@kebab.com";
-  deliveryGuyPhoto.src = _images_contact2_jpg__WEBPACK_IMPORTED_MODULE_2__;
+  deliveryGuyPhoto.src = _images_contact2_jpg__WEBPACK_IMPORTED_MODULE_2__["default"];
 
   deliveryGuyDiv.appendChild(deliveryGuyName);
   deliveryGuyDiv.appendChild(deliveryGuyPhoto);
@@ -702,7 +786,7 @@ const menuPage = (parent) => {
   const kebab1Price = document.createElement("p");
 
   kebab1Name.textContent = "Doner Kebab";
-  kebab1Photo.src = _images_kebab1_png__WEBPACK_IMPORTED_MODULE_1__;
+  kebab1Photo.src = _images_kebab1_png__WEBPACK_IMPORTED_MODULE_1__["default"];
   kebab1Price.textContent = "Price: 1$";
 
   kebab1Div.classList.add("menu-item");
@@ -720,7 +804,7 @@ const menuPage = (parent) => {
   const kebab2Price = document.createElement("p");
 
   kebab2Name.textContent = "Plate Kebab";
-  kebab2Photo.src = _images_kebab2_png__WEBPACK_IMPORTED_MODULE_2__;
+  kebab2Photo.src = _images_kebab2_png__WEBPACK_IMPORTED_MODULE_2__["default"];
   kebab2Price.textContent = "Price: 1$";
 
   kebab2Div.classList.add("menu-item");
@@ -737,7 +821,7 @@ const menuPage = (parent) => {
   const kebab3Price = document.createElement("p");
 
   kebab3Name.textContent = "Rollo Kebab";
-  kebab3Photo.src = _images_kebab3_png__WEBPACK_IMPORTED_MODULE_3__;
+  kebab3Photo.src = _images_kebab3_png__WEBPACK_IMPORTED_MODULE_3__["default"];
   kebab3Price.textContent = "Price: 1$";
 
   kebab3Div.classList.add("menu-item");
@@ -787,67 +871,7 @@ const wrapInHexagon = (child) => {
   \**************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "4f576faa0253fc46fb6a.jpg";
-
-/***/ }),
-
-/***/ "./src/app/images/contact1.jpg":
-/*!*************************************!*\
-  !*** ./src/app/images/contact1.jpg ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "7d7724ae5f4a0b5abbfb.jpg";
-
-/***/ }),
-
-/***/ "./src/app/images/contact2.jpg":
-/*!*************************************!*\
-  !*** ./src/app/images/contact2.jpg ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "8ed86e27470e3c1795cc.jpg";
-
-/***/ }),
-
-/***/ "./src/app/images/contact3.jpg":
-/*!*************************************!*\
-  !*** ./src/app/images/contact3.jpg ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "46bb8a47564b7f66a268.jpg";
-
-/***/ }),
-
-/***/ "./src/app/images/kebab1.png":
-/*!***********************************!*\
-  !*** ./src/app/images/kebab1.png ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "e823a42ec14cbf15bd2c.png";
-
-/***/ }),
-
-/***/ "./src/app/images/kebab2.png":
-/*!***********************************!*\
-  !*** ./src/app/images/kebab2.png ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "ccc5b2827fe90fff4e2e.png";
-
-/***/ }),
-
-/***/ "./src/app/images/kebab3.png":
-/*!***********************************!*\
-  !*** ./src/app/images/kebab3.png ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "35a7a468ebb5bb1d1f95.png";
+module.exports = __webpack_require__.p + "18b79994d34c50a6b10a.jpg";
 
 /***/ }),
 
@@ -857,7 +881,7 @@ module.exports = __webpack_require__.p + "35a7a468ebb5bb1d1f95.png";
   \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "d6a8b611ad649cc05d5f.jpg";
+module.exports = __webpack_require__.p + "812551e4bd35d7195c98.jpg";
 
 /***/ })
 
