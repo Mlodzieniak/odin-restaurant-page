@@ -145,6 +145,9 @@ header {
     grid-template-areas:
         "logo socials"
         "nav nav";
+    padding: 2rem;
+    z-index: 1;
+
 }
 
 .logo {
@@ -165,18 +168,69 @@ footer {
     height: 40px;
 }
 
-.nav-btn {
+.button {
+    --background: #efefef;
+    --border-color: linear-gradient(to bottom right, red, black);
+    --border-width: 0.25em;
+    --edge-size: 0.5em;
+
+    position: relative;
+    isolation: isolate;
     cursor: pointer;
-    color: white;
-    background-color: red;
-    border: whitesmoke 3px solid;
-    /* border-bottom: none; */
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    font-weight: 700;
+
+    display: inline-grid;
+    padding: 0.5em 1.5em;
+    border: 0px;
+    background: var(--background);
+    clip-path: polygon(0% var(--edge-size),
+            /* top left 1 */
+            var(--edge-size) 0%,
+            /* top-left 2 */
+            100% 0,
+            /* top right */
+            100% calc(100% - var(--edge-size)),
+            /* bottom right 1*/
+            calc(100% - var(--edge-size)) 100%,
+            /* bottom right 2*/
+            0 100%);
+    /* bottom left*/
+}
+
+.button::before,
+.button::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+
+.button::before {
+    background: var(--border-color);
+    z-index: -2;
+}
+
+.button::after {
+    background-color: var(--background);
+    z-index: -1;
+    clip-path: polygon(var(--border-width) calc(var(--edge-size) + var(--border-width) * 0.5),
+            calc(var(--edge-size) + var(--border-width) * 0.5) var(--border-width),
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)),
+            calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+            calc(var(--border-width)) calc(100% - var(--border-width)));
+    transition: 250ms;
+}
+
+.button:hover {
+    color: #efefef;
+}
+
+.button:where(:hover, :focus)::after {
+    clip-path: polygon(calc(100% - var(--border-width)) calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)),
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)),
+            calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+            calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)));
 }
 
 body {
@@ -188,8 +242,39 @@ body {
 .container {
     background: url(./app/images/brown-wooden-flooring.jpg);
     background-size: cover;
+    background-attachment: fixed;
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+}
 
+.container>:first-child {
+    margin-top: 100px;
+}
+
+.wrapper>div {
+    padding: 3rem;
+}
+
+.wrapper>div>*,
+button {
+    /* font-size: 1.5rem; */
+    font-size: clamp(1rem, 0.5rem + 5vw, 2rem);
+
+}
+
+.wrapper {
+    background-color: white;
+    width: 93%;
+}
+
+.wrapper-border {
+    background-color: red;
+    width: clamp(300px, 35%, 700px);
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
 
 footer {
@@ -199,4 +284,20 @@ footer {
 
 .purple {
     background-color: darkorchid;
+}
+
+.clip {
+    clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
 }
